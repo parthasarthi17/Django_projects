@@ -1,0 +1,7 @@
+{% for x in dataset %}
+
+<a href="{% url 'geeks:detail' x.pk %}">{{x.title}}</a>
+{{x.title}}
+<br><br>
+
+{% endfor %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>{{post.title}}</h1>
+- by {{post.author}}
+<br><hr>
+
+{{post.bod}}
+
+<br><br>
+
+<a href="{% url 'front' %}" class="btn btn-primary"> Home Page </a>
+
+{% endblock %}
